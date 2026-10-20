@@ -1,8 +1,10 @@
 # EvoProto
 
+By Fang Kai.
+
 Code for **EvoProto: Confusion-Aware Prototype Evolution for Weakly Supervised Incremental Segmentation**. The full method includes prototype segmentation, RCPL, directional CPA, and continuous PBA.
 
-Use Python 3.10+ and a CUDA-compatible PyTorch/torchvision installation, then run `pip install -r requirements.txt`. Prepare VOC2012 with `JPEGImages`, `SegmentationClass`, and `SegmentationClassAug`. Split lists and image-level labels are included; images, checkpoints, logs, and experimental results are excluded. The ViT-B/16 ImageNet pretrained weights download automatically.
+Use Python 3.10+ and a CUDA-compatible PyTorch/torchvision installation, then run `pip install -r requirements.txt`. Prepare VOC2012 with `JPEGImages`, `SegmentationClass`, and `SegmentationClassAug`. Split lists and image-level labels are included. The source distribution excludes images, checkpoints, logs, and experimental outputs. The ViT-B/16 ImageNet pretrained weights download automatically.
 
 ```bash
 # Train all stages and evaluate the final checkpoint with TTA.
