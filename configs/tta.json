@@ -1,0 +1,21 @@
+{
+  "tta_parameters": {
+    "scales": [
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5
+    ],
+    "flip": true,
+    "crop_size": 512,
+    "stride": 384,
+    "max_size": 1024,
+    "aspect_ratio_preserved": true,
+    "dimension_multiple": 16,
+    "normalized_padding": 0.0,
+    "fusion": "overlap_flip_scale_mean_probabilities",
+    "model_precision": "float16_autocast",
+    "accumulation_precision": "float16"
+  }
+}

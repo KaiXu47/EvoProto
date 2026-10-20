@@ -1,0 +1,82 @@
+output_channel,coco_category_id,class_name,group,voc_id
+0,0,background,background,0
+1,8,truck,old,
+2,10,traffic light,old,
+3,11,fire hydrant,old,
+4,13,stop sign,old,
+5,14,parking meter,old,
+6,15,bench,old,
+7,22,elephant,old,
+8,23,bear,old,
+9,24,zebra,old,
+10,25,giraffe,old,
+11,27,backpack,old,
+12,28,umbrella,old,
+13,31,handbag,old,
+14,32,tie,old,
+15,33,suitcase,old,
+16,34,frisbee,old,
+17,35,skis,old,
+18,36,snowboard,old,
+19,37,sports ball,old,
+20,38,kite,old,
+21,39,baseball bat,old,
+22,40,baseball glove,old,
+23,41,skateboard,old,
+24,42,surfboard,old,
+25,43,tennis racket,old,
+26,46,wine glass,old,
+27,47,cup,old,
+28,48,fork,old,
+29,49,knife,old,
+30,50,spoon,old,
+31,51,bowl,old,
+32,52,banana,old,
+33,53,apple,old,
+34,54,sandwich,old,
+35,55,orange,old,
+36,56,broccoli,old,
+37,57,carrot,old,
+38,58,hot dog,old,
+39,59,pizza,old,
+40,60,donut,old,
+41,61,cake,old,
+42,65,bed,old,
+43,70,toilet,old,
+44,73,laptop,old,
+45,74,mouse,old,
+46,75,remote,old,
+47,76,keyboard,old,
+48,77,cell phone,old,
+49,78,microwave,old,
+50,79,oven,old,
+51,80,toaster,old,
+52,81,sink,old,
+53,82,refrigerator,old,
+54,84,book,old,
+55,85,clock,old,
+56,86,vase,old,
+57,87,scissors,old,
+58,88,teddy bear,old,
+59,89,hair drier,old,
+60,90,toothbrush,old,
+61,1,person,new,15
+62,2,bicycle,new,2
+63,3,car,new,7
+64,4,motorcycle,new,14
+65,5,airplane,new,1
+66,6,bus,new,6
+67,7,train,new,19
+68,9,boat,new,4
+69,16,bird,new,3
+70,17,cat,new,8
+71,18,dog,new,12
+72,19,horse,new,13
+73,20,sheep,new,17
+74,21,cow,new,10
+75,44,bottle,new,5
+76,62,chair,new,9
+77,63,couch,new,18
+78,64,potted plant,new,16
+79,67,dining table,new,11
+80,72,tv,new,20

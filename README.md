@@ -1,20 +1,16 @@
 # EvoProto
 
-Supporting aggregate results for **EvoProto: Confusion-Aware Prototype Evolution for Weakly Supervised Incremental Segmentation**, by Zhonggai Wang, Kai Fang, and Guangyu Gao.
+Code for **EvoProto: Confusion-Aware Prototype Evolution for Weakly Supervised Incremental Segmentation**. The full method includes prototype segmentation, RCPL, directional CPA, and continuous PBA.
 
-## Results package
+Use Python 3.10+ and a CUDA-compatible PyTorch/torchvision installation, then run `pip install -r requirements.txt`. Prepare VOC2012 with `JPEGImages`, `SegmentationClass`, and `SegmentationClassAug`. Split lists and image-level labels are included; images, checkpoints, logs, and experimental results are excluded. The ViT-B/16 ImageNet pretrained weights download automatically.
 
-Download [EvoProto-results.zip](EvoProto-results.zip) and extract it. The package includes:
+```bash
+# Train all stages and evaluate the final checkpoint with TTA.
+python train.py --task 10-5 --protocol overlap --data-root /path/to/VOC2012 --gpus 0
+# Inspect the commands without starting training.
+python train.py --task 10-5 --data-root /path/to/VOC2012 --dry-run
+```
 
-- VOC and COCO-to-VOC result summaries and VOC class-wise and stage-wise IoU.
-- Component and shared-weight controls, parameter sweeps, and prototype/confusion diagnostics.
-- Old-to-new prediction-error rates and resource measurements.
-- Selected training settings, data definitions, provenance, and a validation script.
+Tasks: `10-10`, `10-5`, `10-2`, `15-5`; protocols: `overlap`, `disjoint`. COCO→VOC uses `--task coco2voc --coco-image-root /path/to/coco --coco-mask-root /path/to/cocostuff` (2017 splits, zero-based COCO-Stuff masks). See `python train.py --help` and `python tools/evaluate.py --help`. Settings are in `configs/`; output goes to `runs/`.
 
-Run `python validate_data.py` from the extracted folder using Python 3.8 or later. It uses the standard library.
-
-IoU and mIoU are percentages; their differences are percentage points. The included README and data dictionary define the class groups, protocols, precision, and coverage of each file. The package contains aggregate experimental results rather than the original VOC/COCO images, per-image predictions, training code, or model checkpoints.
-
-## Citation and reuse
-
-Please cite the EvoProto paper and identify the exact repository revision used. Publication metadata will be added when available. A reuse license has not yet been selected.
+Built on [ToCo](https://github.com/rulixiang/ToCo). Existing source notices are retained.
