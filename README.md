@@ -1,6 +1,8 @@
 # EvoProto
 
-Supporting aggregate results for **EvoProto: Confusion-Aware Prototype Evolution for Weakly Supervised Incremental Segmentation**, by Zhonggai Wang, Kai Fang, and Guangyu Gao.
+By Fang Kai.
+
+Supporting aggregate results for **EvoProto: Confusion-Aware Prototype Evolution for Weakly Supervised Incremental Segmentation**.
 
 ## Results package
 
